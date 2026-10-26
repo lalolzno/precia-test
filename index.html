@@ -761,43 +761,51 @@ tailwind.config = {
 
     /* Solución: pestañas como listado 1-2-3, sin la etiqueta de ejemplo; el flujo cabe en una pantalla */
     .tabs__tag { display: none; }
-    .tabs__bar { padding: 10px; }
-    .tabs__list { flex-direction: column; width: 100%; gap: 2px; }
-    .tab { width: 100%; height: 44px; font-size: 15.5px; }
-    .tabs__stage { padding: 18px 14px; }
+    .tabs__bar { padding: 6px 10px; }
+    .tabs__list { flex-direction: column; width: 100%; gap: 0; }
+    .tab { width: 100%; height: 38px; font-size: 15px; }
+    .tabs__stage { padding: 12px 12px; }
     .fx2__in, .fx2__in + .fxl { display: none; }
-    .fxl { height: 18px; margin: 4px auto; }
-    .fxc { padding: 14px 16px 16px; border-radius: 20px; }
-    .fxc__t { margin: 0 0 8px; font-size: 13px; }
-    .fxn { grid-template-columns: 56px minmax(0, 1fr); justify-items: start; align-items: center; text-align: left; gap: 6px 14px; }
-    .fxn__ico { width: 56px; height: 56px; grid-row: 1 / span 2; }
-    .fxn__logo { height: 20px; }
+    .fxl { height: 10px; margin: 2px auto; }
+    .fxc { padding: 10px 12px 12px; border-radius: 16px; }
+    .fxc__t { margin: 0 0 4px; font-size: 12px; }
+    .fxn { grid-template-columns: 44px minmax(0, 1fr); justify-items: start; align-items: center; text-align: left; gap: 2px 12px; }
+    .fxn__ico { width: 44px; height: 44px; grid-row: 1 / span 2; }
+    .fx2 .fxn__ico { grid-row: 1; }
+    .fxn__logo { height: 16px; }
     .fxn__sub { display: none; }
-    .fxn__st { justify-content: flex-start; margin: 0; font-size: 14px; }
-    .fxn__cnt { font-size: 14px; }
-    .fx2__chips { grid-column: 1 / -1; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; margin-top: 6px; max-width: none; }
-    .fx2__chips li { height: 40px; gap: 8px; padding: 0 10px; font-size: 13px; }
-    .fx2__chips .ck { width: 20px; height: 20px; }
-    .fx1__in { grid-template-columns: auto auto; gap: 8px; justify-content: start; }
-    .fx1__who { grid-column: 1 / -1; font-size: 13px; }
-    .fx1__msg, .fx1__pdf { padding: 8px 14px; font-size: 14px; }
-    .fx1__pdf { padding: 5px 14px 5px 6px; }
-    .fx1__pdfi { width: 30px; height: 30px; font-size: 10px; }
-    .fx1__rows li { padding: 8px 0; }
-    .fx1__rows .raw { font-size: 13px; } .fx1__rows b { font-size: 14px; }
-    .fx1__foot { padding-top: 10px; font-size: 13px; }
-    .fx2__rows li { padding: 8px 0; font-size: 13.5px; }
-    .fx2__out dl { gap: 6px 12px; font-size: 14px; }
-    .fx2__tot { margin-top: 10px; padding-top: 10px; }
-    .fx2__tot b { font-size: 1.9rem; }
-    .fx2__m { margin: 10px 0 6px; font-size: 13.5px; }
-    .fx3__ask { margin: 10px 0 12px; font-size: 14.5px; }
-    .btn-ap, .btn-no { height: 40px; padding: 0 16px; font-size: 14.5px; }
-    .fx3__ok { margin-top: 12px; padding: 9px 12px; font-size: 14px; }
-    .fx3__bub { padding: 12px 16px; font-size: 15px; }
-    .fx3__day, .fx3__by { font-size: 13px; }
-    .tabs__foot { padding: 14px 18px; gap: 6px; }
-    .tabs__foot p { font-size: 14.5px; line-height: 1.5; }
+    .fxn__st { justify-content: flex-start; margin: 0; font-size: 13px; gap: 4px 8px; }
+    .fxn__cnt { font-size: 13px; }
+    .fx2__chips { grid-column: 1 / -1; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px; margin-top: 4px; max-width: none; }
+    .fx2__chips li { height: 32px; gap: 6px; padding: 0 8px; font-size: 12px; }
+    .fx2__chips .ck { width: 18px; height: 18px; }
+    .fx1__in { grid-template-columns: auto auto; gap: 6px; justify-content: start; }
+    .fx1__who { grid-column: 1 / -1; font-size: 12px; }
+    .fx1__msg, .fx1__pdf { padding: 6px 12px; font-size: 13px; }
+    .fx1__pdf { padding: 4px 12px 4px 5px; }
+    .fx1__pdfi { width: 26px; height: 26px; font-size: 9.5px; }
+    .fx1__rows li { padding: 5px 0; }
+    .fx1__rows .raw { font-size: 12px; } .fx1__rows b { font-size: 13px; }
+    .fx1__foot { padding-top: 6px; font-size: 12px; }
+    .fx2__rows li { padding: 6px 0; font-size: 13px; }
+    .fx2__out dl { gap: 3px 12px; font-size: 13px; }
+    .fx2__tot { margin-top: 6px; padding-top: 6px; }
+    .fx2__tot b { font-size: 1.55rem; }
+    .fx2__m { margin: 6px 0 5px; font-size: 12.5px; }
+    .fx2__fl { margin-top: 4px; font-size: 12px; }
+    .fx3__who { gap: 10px; } .av { width: 34px; height: 34px; font-size: 15px; }
+    .fx3__who b { font-size: 16px; } .fx3__who small { font-size: 12.5px; }
+    .fx3__ask { margin: 8px 0 8px; font-size: 13.5px; line-height: 1.4; }
+    .btn-ap, .btn-no { height: 34px; padding: 0 14px; font-size: 13.5px; }
+    .fx3__ok { margin-top: 8px; padding: 6px 10px; font-size: 13px; }
+    .fx3__ok .ck { width: 20px; height: 20px; }
+    .fx3__fu { gap: 6px; }
+    .fx3__bub { padding: 9px 13px; font-size: 13.5px; line-height: 1.4; }
+    .fx3__day, .fx3__by { font-size: 12px; }
+    .tabs__foot { padding: 10px 16px 12px; gap: 4px; }
+    .tabs__foot-l span { display: none; }
+    .tabs__foot-l b { margin-top: 0; font-size: 1rem; }
+    .tabs__foot p { font-size: 13.5px; line-height: 1.45; }
 
     /* Motor: sin la pirámide, queda la lista de capas */
     .pyr__img { display: none; }
@@ -1754,7 +1762,8 @@ tailwind.config = {
     ['Paso 2 · Cotiza', 'Una sola regla para todas las sucursales', 'Piso de margen, nivel de cliente, precio pactado, políticas, costo del proveedor y otras sucursales: todo revisado en automático.'],
     ['Paso 3 · Aprueba y aprende', 'Tu gerente aprueba, PrecIA aprende', 'La cotización sube a quien aprueba. Lo aprobado se guarda y un agente le da seguimiento al cliente.'],
   ];
-  const DUR = [15500, 13500, 15500];
+  // Fin de la última animación de cada paso (10.3 s · 9.8 s · 11.5 s) + 2 s de pausa antes de pasar al siguiente
+  const DUR = [12300, 11800, 13500];
   const root = $('#sol-tabs');
   if (root) {
     const tabs = $$('.tab', root), pans = $$('.pan', root);
